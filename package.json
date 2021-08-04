@@ -1,0 +1,36 @@
+{
+  "name": "vue-koa-blog",
+  "version": "1.0.0",
+  "description": "vue koa blog",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingyongcheng2016/vue-koa-blog.git"
+  },
+  "keywords": [
+    "vue",
+    "koa",
+    "blog"
+  ],
+  "author": "bugcheng@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingyongcheng2016/vue-koa-blog/issues"
+  },
+  "homepage": "https://github.com/dingyongcheng2016/vue-koa-blog#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
