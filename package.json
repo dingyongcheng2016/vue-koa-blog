@@ -24,8 +24,11 @@
   "homepage": "https://github.com/dingyongcheng2016/vue-koa-blog#readme",
   "dependencies": {
     "@koa/cors": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^4.0.1",
     "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
     "koa-views": "^7.0.1"

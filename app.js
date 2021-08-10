@@ -14,11 +14,11 @@ app.use(parser());
 
 app.use(koaStatic(__dirname + '/public'))
 
-app.use(async (ctx, next) => {
+// app.use(async (ctx, next) => {
 
-    ctx.body = 'hello world!'
-    await next()
-});
+//     ctx.body = 'hello world!'
+//     await next()
+// });
 
 router.get('/', async (ctx, next)=>{
 
