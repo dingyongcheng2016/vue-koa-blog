@@ -21,6 +21,10 @@
   "bugs": {
     "url": "https://github.com/dingyongcheng2016/vue-koa-blog/issues"
   },
+  "_moduleAliases": {
+    "@": ".",
+    "@core": "core"
+  },
   "homepage": "https://github.com/dingyongcheng2016/vue-koa-blog#readme",
   "dependencies": {
     "@koa/cors": "^3.1.0",
@@ -31,7 +35,10 @@
     "koa-jwt": "^4.0.1",
     "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
-    "koa-views": "^7.0.1"
+    "koa-views": "^7.0.1",
+    "module-alias": "^2.2.2",
+    "mysql2": "^2.3.0",
+    "require-directory": "^2.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
