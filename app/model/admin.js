@@ -14,7 +14,7 @@ class Admin extends Model {
 // 初始化管理员模型
 Admin.init({
     id: {
-        type: DataTypes.INTEGER(10).UNSIGNED, // 
+        type: DataTypes.INTEGER(10).UNSIGNED, // UNSIGNED 不能插入负数，如果插入负数默认为零， ZEROFILL 根据默认设置来补零填充
         primaryKey: true,
         autoIncrement: true,
         comment: '管理员id'
