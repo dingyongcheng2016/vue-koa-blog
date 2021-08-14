@@ -9,6 +9,10 @@ const { AdminDao } = require('@dao/admin')
 
 const { Reslove } = require('@lib/helper')
 
+const {
+    RegisterValidator
+  } = require('@validators/admin')
+
 const router = new Router({
     prefix: 'api/v1/admin'
 })
@@ -16,12 +20,13 @@ const router = new Router({
 const res = new Reslove()
 
 router.post('/register', async (ctx, next)=>{
-
+    // 通过验证器校验参数是否通过
+    const v = await new RegisterValidator().validate(ctx);
     // 创建管理者
     const [err, data] = await AdminDao.create({
-        email: '',
-        password: '',
-        nickname: ''
+        email: v.get('body.email'),
+        password: v.get('body.password2'),
+        nickname: v.get('body.nickname')
     })
 
     if(!err){
