@@ -54,3 +54,7 @@ Comment.init({
     modelName: 'comment',
     tableName: 'comment'
 })
+
+module.exports{
+    Comment
+}

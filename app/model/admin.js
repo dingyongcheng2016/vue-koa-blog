@@ -58,3 +58,7 @@ Admin.init({
     modelName: 'admin',
     tableName: 'admin'
 })
+
+module.exports={
+    Admin
+}

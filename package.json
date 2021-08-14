@@ -23,7 +23,13 @@
   },
   "_moduleAliases": {
     "@": ".",
-    "@core": "core"
+    "@app": "app",
+    "@core": "core",
+    "@middlewares": "middlewares",
+    "@lib": "app/lib",
+    "@api": "app/api",
+    "@model": "app/model",
+    "@dao": "app/dao"
   },
   "homepage": "https://github.com/dingyongcheng2016/vue-koa-blog#readme",
   "dependencies": {
