@@ -13,7 +13,7 @@ app.use(catchError)
 
 app.use(parser());
 
-app.use(koaStatic(__dirname + '/public'))
+// app.use(koaStatic(__dirname + '/public'))
 
 InitManager.initCore(app)
 
